@@ -3,7 +3,7 @@
 //  VPNExtension
 //
 //  Created by X on 2023/1/15.
-//  Copyright © 2023 RongVP. All rights reserved.
+//  Copyright © 2023 VP. All rights reserved.
 //
 
 #import "WSParserManager.h"
@@ -244,8 +244,6 @@ typedef void(^YHSetupCompletion)(NETunnelProviderManager *manager);
     NETunnelProviderProtocol *protocolConfiguration = [NETunnelProviderProtocol new];
     
     protocolConfiguration.serverAddress = __apple_vpn_server_address__;
-    
-    // providerConfiguration 可以自定义进行存储
     protocolConfiguration.providerConfiguration = @{};
     manager.protocolConfiguration = protocolConfiguration;
 
