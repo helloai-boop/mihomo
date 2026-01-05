@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1753D5F62F08BC48007265E3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1753D5F52F08BC48007265E3 /* NetworkExtension.framework */; };
+		1753D5FE2F08BC48007265E3 /* networkextension-ios.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1753D5F32F08BC48007265E3 /* networkextension-ios.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1753D60B2F08BCB7007265E3 /* xxpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1753D60A2F08BCB1007265E3 /* xxpc.framework */; };
+		1753D60E2F08BCBE007265E3 /* xxpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1753D60A2F08BCB1007265E3 /* xxpc.framework */; };
+		1753D6162F08BCCC007265E3 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753D6132F08BCCC007265E3 /* PacketTunnelProvider.swift */; };
+		1753D6222F08BCCF007265E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753D6182F08BCCF007265E3 /* Assets.xcassets */; };
+		1753D6242F08BCCF007265E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753D61C2F08BCCF007265E3 /* LaunchScreen.storyboard */; };
+		1753D6252F08BCCF007265E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753D61E2F08BCCF007265E3 /* Main.storyboard */; };
+		1753D6262F08BCCF007265E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753D6172F08BCCF007265E3 /* AppDelegate.swift */; };
+		1753D6272F08BCCF007265E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753D61F2F08BCCF007265E3 /* SceneDelegate.swift */; };
+		1753D6282F08BCCF007265E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753D6202F08BCCF007265E3 /* ViewController.swift */; };
+		1753D62A2F08BCD2007265E3 /* Mihomo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1753D6292F08BCD2007265E3 /* Mihomo.xcframework */; };
+		1753D6622F08E7BC007265E3 /* config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 1753D65D2F08E46D007265E3 /* config.yaml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1753D5FC2F08BC48007265E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1753D5CF2F08BC31007265E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1753D5F22F08BC48007265E3;
+			remoteInfo = "networkextension-ios";
+		};
+		1753D6092F08BCB1007265E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1753D6052F08BCB1007265E3 /* xxpc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CC6E6BB2BFA451E00CBAAB2;
+			remoteInfo = xxpc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1753D6032F08BC48007265E3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1753D5FE2F08BC48007265E3 /* networkextension-ios.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1753D5D72F08BC31007265E3 /* ios-mihomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mihomo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753D5F32F08BC48007265E3 /* networkextension-ios.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "networkextension-ios.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753D5F52F08BC48007265E3 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		1753D6052F08BCB1007265E3 /* xxpc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = xxpc.xcodeproj; path = xxpc/xxpc.xcodeproj; sourceTree = "<group>"; };
+		1753D6112F08BCCC007265E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753D6122F08BCCC007265E3 /* networkextension_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = networkextension_ios.entitlements; sourceTree = "<group>"; };
+		1753D6132F08BCCC007265E3 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		1753D6172F08BCCF007265E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1753D6182F08BCCF007265E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1753D6192F08BCCF007265E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753D61A2F08BCCF007265E3 /* ios-mihomo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-mihomo.entitlements"; sourceTree = "<group>"; };
+		1753D61B2F08BCCF007265E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1753D61D2F08BCCF007265E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1753D61F2F08BCCF007265E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1753D6202F08BCCF007265E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1753D6292F08BCD2007265E3 /* Mihomo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Mihomo.xcframework; sourceTree = "<group>"; };
+		1753D65D2F08E46D007265E3 /* config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = config.yaml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1753D5D42F08BC31007265E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753D60E2F08BCBE007265E3 /* xxpc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753D5F02F08BC48007265E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753D62A2F08BCD2007265E3 /* Mihomo.xcframework in Frameworks */,
+				1753D5F62F08BC48007265E3 /* NetworkExtension.framework in Frameworks */,
+				1753D60B2F08BCB7007265E3 /* xxpc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1753D5CE2F08BC31007265E3 = {
+			isa = PBXGroup;
+			children = (
+				1753D6052F08BCB1007265E3 /* xxpc.xcodeproj */,
+				1753D6212F08BCCF007265E3 /* ios-mihomo */,
+				1753D6142F08BCCC007265E3 /* networkextension-ios */,
+				1753D5F42F08BC48007265E3 /* Frameworks */,
+				1753D5D82F08BC31007265E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1753D5D82F08BC31007265E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1753D5D72F08BC31007265E3 /* ios-mihomo.app */,
+				1753D5F32F08BC48007265E3 /* networkextension-ios.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1753D5F42F08BC48007265E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1753D5F52F08BC48007265E3 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1753D6062F08BCB1007265E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1753D60A2F08BCB1007265E3 /* xxpc.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1753D6142F08BCCC007265E3 /* networkextension-ios */ = {
+			isa = PBXGroup;
+			children = (
+				1753D6112F08BCCC007265E3 /* Info.plist */,
+				1753D6122F08BCCC007265E3 /* networkextension_ios.entitlements */,
+				1753D6132F08BCCC007265E3 /* PacketTunnelProvider.swift */,
+				1753D6292F08BCD2007265E3 /* Mihomo.xcframework */,
+			);
+			path = "networkextension-ios";
+			sourceTree = "<group>";
+		};
+		1753D6212F08BCCF007265E3 /* ios-mihomo */ = {
+			isa = PBXGroup;
+			children = (
+				1753D65D2F08E46D007265E3 /* config.yaml */,
+				1753D6172F08BCCF007265E3 /* AppDelegate.swift */,
+				1753D6182F08BCCF007265E3 /* Assets.xcassets */,
+				1753D6192F08BCCF007265E3 /* Info.plist */,
+				1753D61A2F08BCCF007265E3 /* ios-mihomo.entitlements */,
+				1753D61C2F08BCCF007265E3 /* LaunchScreen.storyboard */,
+				1753D61E2F08BCCF007265E3 /* Main.storyboard */,
+				1753D61F2F08BCCF007265E3 /* SceneDelegate.swift */,
+				1753D6202F08BCCF007265E3 /* ViewController.swift */,
+			);
+			path = "ios-mihomo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1753D5D62F08BC31007265E3 /* ios-mihomo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753D5EA2F08BC32007265E3 /* Build configuration list for PBXNativeTarget "ios-mihomo" */;
+			buildPhases = (
+				1753D5D32F08BC31007265E3 /* Sources */,
+				1753D5D42F08BC31007265E3 /* Frameworks */,
+				1753D5D52F08BC31007265E3 /* Resources */,
+				1753D6032F08BC48007265E3 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1753D5FD2F08BC48007265E3 /* PBXTargetDependency */,
+			);
+			name = "ios-mihomo";
+			packageProductDependencies = (
+			);
+			productName = "ios-mihomo";
+			productReference = 1753D5D72F08BC31007265E3 /* ios-mihomo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1753D5F22F08BC48007265E3 /* networkextension-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753D5FF2F08BC48007265E3 /* Build configuration list for PBXNativeTarget "networkextension-ios" */;
+			buildPhases = (
+				1753D5EF2F08BC48007265E3 /* Sources */,
+				1753D5F02F08BC48007265E3 /* Frameworks */,
+				1753D5F12F08BC48007265E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "networkextension-ios";
+			packageProductDependencies = (
+			);
+			productName = "networkextension-ios";
+			productReference = 1753D5F32F08BC48007265E3 /* networkextension-ios.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1753D5CF2F08BC31007265E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					1753D5D62F08BC31007265E3 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					1753D5F22F08BC48007265E3 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = 1753D5D22F08BC31007265E3 /* Build configuration list for PBXProject "ios-mihomo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1753D5CE2F08BC31007265E3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1753D5D82F08BC31007265E3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1753D6062F08BCB1007265E3 /* Products */;
+					ProjectRef = 1753D6052F08BCB1007265E3 /* xxpc.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1753D5D62F08BC31007265E3 /* ios-mihomo */,
+				1753D5F22F08BC48007265E3 /* networkextension-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1753D60A2F08BCB1007265E3 /* xxpc.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = xxpc.framework;
+			remoteRef = 1753D6092F08BCB1007265E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1753D5D52F08BC31007265E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753D6222F08BCCF007265E3 /* Assets.xcassets in Resources */,
+				1753D6242F08BCCF007265E3 /* LaunchScreen.storyboard in Resources */,
+				1753D6622F08E7BC007265E3 /* config.yaml in Resources */,
+				1753D6252F08BCCF007265E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753D5F12F08BC48007265E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1753D5D32F08BC31007265E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753D6262F08BCCF007265E3 /* AppDelegate.swift in Sources */,
+				1753D6272F08BCCF007265E3 /* SceneDelegate.swift in Sources */,
+				1753D6282F08BCCF007265E3 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753D5EF2F08BC48007265E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753D6162F08BCCC007265E3 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1753D5FD2F08BC48007265E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1753D5F22F08BC48007265E3 /* networkextension-ios */;
+			targetProxy = 1753D5FC2F08BC48007265E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1753D61C2F08BCCF007265E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1753D61B2F08BCCF007265E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1753D61E2F08BCCF007265E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1753D61D2F08BCCF007265E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1753D5EB2F08BC32007265E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ios-mihomo/ios-mihomo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BX9U77G23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-mihomo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = mihomo;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x.ai.ios-mihomo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1753D5EC2F08BC32007265E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ios-mihomo/ios-mihomo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BX9U77G23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-mihomo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = mihomo;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x.ai.ios-mihomo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1753D5ED2F08BC32007265E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3BX9U77G23;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1753D5EE2F08BC32007265E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3BX9U77G23;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1753D6002F08BC48007265E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "networkextension-ios/networkextension_ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BX9U77G23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "networkextension-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "networkextension-ios";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x.ai.ios-mihomo.networkextension-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1753D6012F08BC48007265E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "networkextension-ios/networkextension_ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BX9U77G23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "networkextension-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "networkextension-ios";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x.ai.ios-mihomo.networkextension-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1753D5D22F08BC31007265E3 /* Build configuration list for PBXProject "ios-mihomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753D5ED2F08BC32007265E3 /* Debug */,
+				1753D5EE2F08BC32007265E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753D5EA2F08BC32007265E3 /* Build configuration list for PBXNativeTarget "ios-mihomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753D5EB2F08BC32007265E3 /* Debug */,
+				1753D5EC2F08BC32007265E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753D5FF2F08BC48007265E3 /* Build configuration list for PBXNativeTarget "networkextension-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753D6002F08BC48007265E3 /* Debug */,
+				1753D6012F08BC48007265E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1753D5CF2F08BC31007265E3 /* Project object */;
+}

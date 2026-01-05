@@ -1,0 +1,39 @@
+allow-lan: true
+mode: rule
+log-level: info
+
+tun:
+  enable: true
+  stack: system
+  device: utun12
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
+
+proxies:
+  - name: "SS"
+    type: ss
+    server: c.idydz.top
+    port: 40253
+    password: c5573bc4-b412-4b53-be25-45ad31a9245d
+    cipher: chacha20-ietf-poly1305
+
+proxy-groups:
+  - name: Default
+    type: select
+    proxies:
+      - SS
+
+rules:
+  - MATCH,Default
