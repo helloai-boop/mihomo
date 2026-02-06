@@ -7,6 +7,7 @@
 
 import UIKit
 import xxpc
+import Foundation
 
 class ViewController: UIViewController, UITextViewDelegate {
 
@@ -65,6 +66,10 @@ class ViewController: UIViewController, UITextViewDelegate {
         configTextView.text = str
         highlightYAML()
         updateButtonStatus()
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: .init(block: {
+//            WSParserManager.shared().echo();
+//        }))
     }
 
     private func setupUI() {

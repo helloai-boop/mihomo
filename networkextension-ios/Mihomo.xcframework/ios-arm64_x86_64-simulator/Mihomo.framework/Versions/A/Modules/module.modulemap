@@ -1,0 +1,8 @@
+framework module "Mihomo" {
+	header "ref.h"
+    header "Mihomo.objc.h"
+    header "Universe.objc.h"
+    header "Mihomo.h"
+
+    export *
+}
